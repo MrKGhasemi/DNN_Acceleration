@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "status": "historical_uncontrolled_observation",
+  "source": {
+    "accelerated_notebook": "12  ---Transfomers All accelerations techniques in pytorch on Food101 practice(Reduced time 2x)---.ipynb",
+    "reference_notebook": "13 - Food101_1&5TopClasses whole - TuneLR(90ACC) .ipynb"
+  },
+  "accelerated_environment_recorded_in_notebook": {
+    "torch": "2.9.1+cu128",
+    "cuda_runtime": "12.8",
+    "cudnn": 91002,
+    "gpu_name": null,
+    "total_gpu_memory_gb_decimal": 8.585
+  },
+  "first_epoch_observations": {
+    "reference": {
+      "minutes": 27.71,
+      "test_top1": 0.8765,
+      "test_top5": 0.9746
+    },
+    "accelerated": {
+      "minutes": 13.43,
+      "test_top1": 0.8704,
+      "test_top5": null
+    }
+  },
+  "nominal_speedup": 2.0632911392,
+  "formula": "27.71 / 13.43",
+  "caveat": "The runs differ in more than TF32, torch.compile, and mixed precision. This value is a hypothesis-generating observation, not a controlled causal estimate."
+}

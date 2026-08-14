@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "food101-vit-acceleration"
+version = "1.0.0"
+description = "A controlled PyTorch benchmark of TF32, torch.compile, and mixed precision on Food-101 with ViT-B/16."
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = { file = "LICENSE" }
+authors = [{ name = "Food-101 ViT Acceleration Authors" }]
+dependencies = [
+  "torch==2.9.1",
+  "torchvision==0.24.1",
+]
+
+[project.scripts]
+food101-train = "food101_accel.train:main"
+food101-benchmark = "food101_accel.benchmark:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
