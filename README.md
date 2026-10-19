@@ -541,7 +541,7 @@ incorrectly short duration.
 
 The source notebooks recorded the following first epochs:
 
-| Run | Time | Test Top-1 | Nominal speedup |
+| Run | Time | Test Top-1 ACC | Nominal speedup |
 |---|---:|---:|---:|
 | Notebook 13, later ViT run | 27.71 min | 87.65% | 1.00x |
 | Notebook 12, accelerated run | 13.43 min | 87.04% | **2.06x** |
