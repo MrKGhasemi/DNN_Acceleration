@@ -17,7 +17,7 @@ command-line runner for unattended measurements.
 ## What is being compared?
 
 | Setting | Baseline | Accelerated |
-|---|---:|---:|
+|---|---|---|
 | `torch.set_float32_matmul_precision` | `"highest"` | `"high"` |
 | CUDA/cuDNN TF32 | disabled | enabled |
 | `torch.compile` | disabled | enabled |
@@ -272,7 +272,7 @@ receive BF16 operands, while sensitive operations remain FP32.
 ### BF16 versus FP32 and FP16
 
 | Format | Sign bits | Exponent bits | Fraction bits | Main property |
-|---|---:|---:|---:|---|
+|---|---|---|---|---|
 | FP32 | 1 | 8 | 23 | high precision and wide range |
 | TF32 multiply | 1 | 8 | 10 | FP32-like range, Tensor Core matmul |
 | BF16 | 1 | 8 | 7 | FP32-like range, low precision |
