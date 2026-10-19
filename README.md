@@ -543,8 +543,8 @@ The source notebooks recorded the following first epochs:
 
 | Run | Time | Test Top-1 ACC | Nominal speedup |
 |---|---|---|---|
-| Notebook 13, later ViT run | 27.71 min | 87.65% | 1.00x |
-| Notebook 12, accelerated run | 13.43 min | 87.04% | **2.06x** |
+|  ViT run | 27.71 min | 87.65% | 1.00x |
+| accelerated run | 13.43 min | 87.04% | **2.06x** |
 
 The JSON transcription is in
 [`results/original-notebook-observation.json`](results/original-notebook-observation.json).
